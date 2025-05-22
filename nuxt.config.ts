@@ -10,4 +10,9 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  runtimeConfig: {
+      public: {
+        apiBaseURL: process.env.API_BASE_URL || 'https://api.hexabyt.com',
+      },
+  },
 })
